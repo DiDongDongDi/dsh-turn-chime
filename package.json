@@ -1,0 +1,36 @@
+{
+  "name": "dsh-turn-chime",
+  "version": "0.1.0",
+  "private": true,
+  "description": "回合结束时响一声并弹一条系统通知。不声明任何 @deepseek-ai 依赖。",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DiDongDongDi/dsh-turn-chime.git"
+  },
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "README.zh.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web"
+    }
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

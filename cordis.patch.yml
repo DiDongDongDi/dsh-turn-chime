@@ -1,0 +1,4 @@
+# dsh-turn-chime — 回合结束提示音。逻辑在 client.js。
+- insert:
+    - id: turn-chime
+      name: dsh-turn-chime
